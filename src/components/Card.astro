@@ -1,21 +1,24 @@
 ---
 interface Props {
-	title: string;
-	body: string;
-	href: string;
+	name: string;
+	launchDate: Date;
+	launchVehicle: string;
+	link: string;
+	status: string;
 }
 
-const { href, title, body } = Astro.props;
+const { link, name, status, launchDate, launchVehicle } = Astro.props;
 ---
 
 <li class="link-card">
-	<a href={href}>
+	<a href={link}>
 		<h2>
-			{title}
-			<span>&rarr;</span>
+			{name}
 		</h2>
 		<p>
-			{body}
+			Status: {status}
+			Launched by: {launchVehicle}
+			On: {launchDate}
 		</p>
 	</a>
 </li>

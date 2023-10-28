@@ -12,6 +12,7 @@
   "dependencies": {
     "@astrojs/check": "^0.2.1",
     "@astrojs/tailwind": "^5.0.2",
+    "@astrojs/ts-plugin": "^1.2.0",
     "@astrojs/vercel": "^5.1.0",
     "astro": "^3.3.4",
     "eslint": "^8.52.0",
