@@ -8,6 +8,6 @@ export default defineConfig({
   output: 'server',
   adapter: vercel(),
   integrations: [tailwind({
-    applyBaseStyles: false,
+    applyBaseStyles: true,
   })]
 });
